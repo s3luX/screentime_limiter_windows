@@ -2,6 +2,7 @@
 A simple script designed to limit the usage of Windows computers for children to x amount of minutes (hours)
 
 This script was created on a request from a friend, and with 2 beers in hand and an hour of time, the repo is the child.
+
 The "application" is a very simple utilization of built-in features of Windows and PowerShell, it does not need any libraries and is not dependent on anything other than PowerShell.
 
 The scripts were not set in mind to fully hide from the users of the computer, note that the app is designed in mind that the computer is used by kids who are spending too much time on the computer. It is aimed to help the parents control the time their children spend on the computer.
