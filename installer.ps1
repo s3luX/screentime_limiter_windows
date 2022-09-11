@@ -4,9 +4,9 @@ $Desktop=[Environment]::GetFolderPath("Desktop")
 $FullPath=$WorkingDir+"\runner.ps1"
 New-Item -ItemType Directory -Force -Path $WorkingDir\days
 
-wget "https://raw.githubusercontent.com/s3luX/screentime_limiter_windows/main/runner.ps1" -outfile "$WorkingDir/runner.ps1"
-wget "https://raw.githubusercontent.com/s3luX/screentime_limiter_windows/main/stopper.ps1" -outfile "$env:APPDATA/stopper.ps1"
-wget "https://raw.githubusercontent.com/s3luX/screentime_limiter_windows/main/stopper.bat" -outfile "$Desktop/ScreenTime Config.bat"
+wget "https://raw.githubusercontent.com/s3luX/screentime_limiter_windows/main/Work_files/runner.ps1" -outfile "$WorkingDir/runner.ps1"
+wget "https://raw.githubusercontent.com/s3luX/screentime_limiter_windows/main/Work_files/stopper.ps1" -outfile "$env:APPDATA/stopper.ps1"
+wget "https://raw.githubusercontent.com/s3luX/screentime_limiter_windows/main/Work_files/stopper.bat" -outfile "$Desktop/ScreenTime Config.bat"
 
 [int]$allowedTime = Read-Host "How many minutes can the computer be used per day? eg. 30"
 $allowedTime | Out-File -FilePath $TimerFile
