@@ -1,7 +1,7 @@
 # screentime_limiter_windows
 A simple script designed to limit the usage of Windows computers for children to x amount of minutes (hours)
 
-This script was created on a request from a friend, and with 2 beers in hand and an hour of time, the repo is the child.
+This script was created on a request from a friend, and with 2 beers in hand and an hour of time, the repo is the child of it.
 
 The "application" is a very simple utilization of built-in features of Windows and PowerShell, it does not need any libraries and is not dependent on anything other than PowerShell.
 
