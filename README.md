@@ -18,4 +18,4 @@ The installation is simple and can be done in 3 steps:
 
 The password for the app is "**ParentLozinka1**", if you want to change it use the *pass_change.ps1* script (right click and "Run in PowerShell") and follow the instructions.
 
-## Tested on Windows 10, but should work fine with anything Windows 8+
+### Tested on Windows 10, but should work fine with anything Windows 8+
