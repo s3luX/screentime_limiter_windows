@@ -16,4 +16,4 @@ The installation is simple and can be done in 3 steps:
 2. Start PowerShell with elevated privileges and run the command "Set-ExecutionPolicy Bypass" and answer with "Y"
 3. Right-click the installer.ps1 script and select "Run with PowerShell"
 
-The password for the app is "ParentLozinka1", if you want to change it use the pass_change.ps1 script (right click and "Run in PowerShell") and follow the instructions.
+The password for the app is "**ParentLozinka1**", if you want to change it use the pass_change.ps1 script (right click and "Run in PowerShell") and follow the instructions.
