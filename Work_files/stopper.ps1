@@ -31,7 +31,7 @@ if ($EncodedText -eq "UwB5AHMAdABlAG0ALgBTAGUAYwB1AHIAaQB0AHkALgBTAGUAYwB1AHIAZQ
 		Remove-Item -LiteralPath "$env:APPDATA/TempSCH" -Force -Recurse
 		Remove-Item -LiteralPath "$env:APPDATA/stopper.ps1" -Force
 		Remove-Item -LiteralPath "$Desktop/ScreenTime Config.bat" -Force
-		Unregister-ScheduledTask -TaskName "ScreenTime" -Confirm:$False
+		Unregister-ScheduledTask -TaskName "ScreenTime" -Confirm:$False # Admin rights needed because of this action
 	}
 	else
 	{
