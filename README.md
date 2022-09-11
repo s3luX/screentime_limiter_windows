@@ -12,5 +12,5 @@ I created the app as I was researching the available apps on the web to perform 
 
 The installation is simple and can be done in 3 steps:
 1. Download the installer.ps1 script from the repo
-2. Start Powershell with elevated privileges and run the command "Set-ExecutionPolicy Bypass" (dont close the 
+2. Start Powershell with elevated privileges and run the command "Set-ExecutionPolicy Bypass" and answer with "Y"
 3. Right click the installer.ps1 script and select "Run with Powershell"
