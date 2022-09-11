@@ -11,6 +11,8 @@ $EncodedText =[Convert]::ToBase64String($Bytes)
 $TimerFile="$env:APPDATA\TempSCH\timer.config"
 $Desktop=[Environment]::GetFolderPath("Desktop")
 
+# If you want to change the app password, change the below entry with the newly encoded password you generated.
+# Change encoded text within the " ", please inlcude the whole encrypted phrase including the = at the end.
 if ($EncodedText -eq "UwB5AHMAdABlAG0ALgBTAGUAYwB1AHIAaQB0AHkALgBTAGUAYwB1AHIAZQBTAHQAcgBpAG4AZwA=") {
 	
 	Write-Host "Which option do you want to execute?"
