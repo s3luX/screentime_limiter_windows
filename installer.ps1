@@ -19,4 +19,10 @@ $Action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $Argument
 $Trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 1)
 $Settings = New-ScheduledTaskSettingsSet
 $Task = New-ScheduledTask -Action $Action -Trigger $Trigger -Settings $Settings
-Register-ScheduledTask -TaskName 'ScreenTime' -InputObject $Task -User $username -Password $userPass
+
+if ($userPass) {
+    Register-ScheduledTask -TaskName 'ScreenTime' -InputObject $Task -User $username -Password $userPass
+}
+else {
+    Register-ScheduledTask -TaskName 'ScreenTime' -InputObject $Task -User $username
+}
