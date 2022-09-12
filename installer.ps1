@@ -18,11 +18,13 @@ $Argument = "-WindowStyle hidden -NonInteractive -NoLogo -NoProfile -File "+$Ful
 $Action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument $Argument
 $Trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 1)
 $Settings = New-ScheduledTaskSettingsSet
-$Task = New-ScheduledTask -Action $Action -Trigger $Trigger -Settings $Settings
+$Principal = New-ScheduledTaskPrincipal -UserId $username -LogonType "S4U"
 
 if ($userPass) {
+    $Task = New-ScheduledTask -Action $Action -Trigger $Trigger -Settings $Settings
     Register-ScheduledTask -TaskName 'ScreenTime' -InputObject $Task -User $username -Password $userPass
 }
 else {
-    Register-ScheduledTask -TaskName 'ScreenTime' -InputObject $Task -User $username
+    $Task = New-ScheduledTask -Action $Action -Principal $Principal -Trigger $Trigger -Settings $Settings
+    Register-ScheduledTask -TaskName 'ScreenTime' -InputObject $Task
 }
