@@ -19,3 +19,6 @@ The installation is simple and can be done in 3 steps:
 The password for the app is "**ParentLozinka1**", if you want to change it use the *pass_change.ps1* script (right click and "Run in PowerShell") and follow the instructions.
 
 ### Tested on Windows 10, but should work fine with anything Windows 8+
+
+# Known issues
+Works only with a single user computer, if multi usered computer is used, all users are count towards the total time.
