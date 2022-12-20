@@ -21,4 +21,4 @@ The password for the app is "**ParentLozinka1**", if you want to change it use t
 ### Tested on Windows 10, but should work fine with anything Windows 8+
 
 # Known issues
-Works only with a single user computer, if multi usered computer is used, all users are count towards the total time.
+- Works only with a single user computer, if multi usered computer is used, all users are count towards the total time.
